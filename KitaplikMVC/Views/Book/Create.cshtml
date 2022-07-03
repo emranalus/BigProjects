@@ -1,0 +1,89 @@
+﻿@using KitaplikMVC.Models.DTOs
+@model BookCreateDto
+
+<div class="row">
+    <form asp-action="Create" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="Id" value="@Model.Id" />
+
+        <div class="form-group">
+            <label asp-for="Title" class="control-label">Kitap Adı</label>
+            <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Author" class="control-label">Yazar Adı</label>
+            <input asp-for="Author" class="form-control" />
+            <span asp-validation-for="Author" class="text-danger"></span>
+        </div>
+
+        @{
+            List<SelectListItem> listItems = new List<SelectListItem>();
+            listItems.Add(new SelectListItem
+            {
+                Text = "Bilim Kurgu",
+                Value = "0"
+            });
+            listItems.Add(new SelectListItem
+            {
+                Text = "Korku",
+                Value = "1"
+            });
+            listItems.Add(new SelectListItem
+            {
+                Text = "Romantik",
+                Value = "2"
+            });
+            listItems.Add(new SelectListItem
+            {
+                Text = "Kişisel Gelişim",
+                Value = "3"
+            });
+            listItems.Add(new SelectListItem
+            {
+                Text = "Tarih",
+                Value = "4"
+            });
+            listItems.Add(new SelectListItem
+            {
+                Text = "Din",
+                Value = "5"
+            });
+            listItems.Add(new SelectListItem
+            {
+                Text = "Psikoloji",
+                Value = "6"
+            });
+            listItems.Add(new SelectListItem
+            {
+                Text = "Ekonomi",
+                Value = "7"
+            });
+            listItems.Add(new SelectListItem
+            {
+                Text = "Felsefe",
+                Value = "8"
+            });
+        }
+
+        <div class="form-group">
+            <label asp-for="Genre" class="control-label">Tür</label>
+            @*@Html.DropDownList("Kitap Türü", listItems, new {@class = "form-control"})*@
+            @Html.DropDownListFor(m => m.Genre, listItems, new {@class = "form-control"})
+            <span asp-validation-for="Genre" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Price" class="control-label">Fiyat</label>
+            <input asp-for="Price" class="form-control" />
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+
+        <br />
+
+        <input type="submit" class="btn btn-success" value="Kaydet" />
+        <input type="submit" class="btn btn-primary" value="Listeye Geri Dön" asp-action="Index" />
+
+    </form>
+</div>

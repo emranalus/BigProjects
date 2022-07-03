@@ -1,0 +1,40 @@
+﻿@using KitaplikMVC.Models.DTOs
+@model ICollection<BookListDto>
+
+<a class="btn btn-primary" asp-controller="Book" asp-action="Create">Yeni Kayıt</a>
+
+<table class="table table-hover"> 
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Price</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Title</td>
+                <td>@item.Author</td>
+                <td>@item.Genre</td>
+                <td>@item.Price₺</td>
+
+                <td>
+                    @*<a class="btn btn-danger"
+                    asp-action="Delete"
+                    asp-controller="Book"
+                    asp-route-id="@item.Id">Sil</a>*@
+
+                    <a class="btn btn-success"
+                    asp-action="Update"
+                    asp-controller="Book"
+                    asp-route-id="@item.Id">Güncelle</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,14 @@
+C:\Users\i-lıfe\source\repos\KitaplikMVC\KitaplikMVC_DAL\bin\Debug\net6.0\KitaplikMVC_DAL.deps.json
+C:\Users\i-lıfe\source\repos\KitaplikMVC\KitaplikMVC_DAL\bin\Debug\net6.0\KitaplikMVC_DAL.runtimeconfig.json
+C:\Users\i-lıfe\source\repos\KitaplikMVC\KitaplikMVC_DAL\bin\Debug\net6.0\KitaplikMVC_DAL.dll
+C:\Users\i-lıfe\source\repos\KitaplikMVC\KitaplikMVC_DAL\bin\Debug\net6.0\KitaplikMVC_DAL.pdb
+C:\Users\i-lıfe\source\repos\KitaplikMVC\KitaplikMVC_DAL\obj\Debug\net6.0\KitaplikMVC_DAL.csproj.AssemblyReference.cache
+C:\Users\i-lıfe\source\repos\KitaplikMVC\KitaplikMVC_DAL\obj\Debug\net6.0\KitaplikMVC_DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\i-lıfe\source\repos\KitaplikMVC\KitaplikMVC_DAL\obj\Debug\net6.0\KitaplikMVC_DAL.AssemblyInfoInputs.cache
+C:\Users\i-lıfe\source\repos\KitaplikMVC\KitaplikMVC_DAL\obj\Debug\net6.0\KitaplikMVC_DAL.AssemblyInfo.cs
+C:\Users\i-lıfe\source\repos\KitaplikMVC\KitaplikMVC_DAL\obj\Debug\net6.0\KitaplikMVC_DAL.csproj.CoreCompileInputs.cache
+C:\Users\i-lıfe\source\repos\KitaplikMVC\KitaplikMVC_DAL\obj\Debug\net6.0\KitaplikMVC_DAL.dll
+C:\Users\i-lıfe\source\repos\KitaplikMVC\KitaplikMVC_DAL\obj\Debug\net6.0\refint\KitaplikMVC_DAL.dll
+C:\Users\i-lıfe\source\repos\KitaplikMVC\KitaplikMVC_DAL\obj\Debug\net6.0\KitaplikMVC_DAL.pdb
+C:\Users\i-lıfe\source\repos\KitaplikMVC\KitaplikMVC_DAL\obj\Debug\net6.0\KitaplikMVC_DAL.genruntimeconfig.cache
+C:\Users\i-lıfe\source\repos\KitaplikMVC\KitaplikMVC_DAL\obj\Debug\net6.0\ref\KitaplikMVC_DAL.dll
