@@ -24,6 +24,7 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(x =>
     x.Password.RequireNonAlphanumeric = false;
     x.Password.RequiredUniqueChars = 0;
     x.Password.RequireLowercase = false;
+
 }).AddEntityFrameworkStores<SqlDbContext>().AddDefaultTokenProviders();
 
 var app = builder.Build();
@@ -38,6 +39,8 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.UseAuthentication();
 
 app.MapControllerRoute(
     name: "default",
